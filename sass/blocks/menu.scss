@@ -1,0 +1,9 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: $menu-padding;
+  width: $min-site-width - $site-padding*2 - $menu-padding*2;
+  border-top: 1px #000000 solid;
+  border-bottom: 1px #000000 solid;
+}
