@@ -1,0 +1,31 @@
+.promo {
+  @include site-width ($min-site-width, $site-padding);
+  height: $promo-height;
+
+  &:first-child {
+    padding-top: $header-height;
+    height: $promo-height - $header-height;
+  }
+
+  &--fixies {
+    background-color: #6a93b5;
+  }
+
+  &--cruisers {
+    background-color: #b985d8;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+}

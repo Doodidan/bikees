@@ -1,0 +1,13 @@
+.main-header {
+  @include site-width ($min-site-width, $site-padding);
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -$min-site-width/2;
+  height: $header-height;
+
+  &__search {
+    margin-left: auto;
+  }
+}

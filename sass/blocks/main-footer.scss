@@ -1,0 +1,5 @@
+.main-footer {
+  @include site-width ($min-site-width, $site-padding);
+  background-color: $color-footer;
+  padding: 1px;
+}
