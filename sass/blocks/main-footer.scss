@@ -1,6 +1,21 @@
 .main-footer {
-  @include site-width ($min-site-width, $site-padding);
-  background-color: $color-footer;
   padding: 1px;
+
   text-align: center;
+
+  background-color: $color-footer;
+
+  @include site-width ($min-site-width, $site-padding);
+
+  @media (min-width: $max-site-width) {
+    display: flex;
+
+    @include site-width ($max-site-width, $site-padding);
+  }
+
+  &__menu {
+    @media (min-width: $max-site-width) {
+      margin-left: auto;
+    }
+  }
 }

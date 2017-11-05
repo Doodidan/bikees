@@ -1,3 +1,5 @@
 body {
   min-width: $min-site-width;
+  max-width: $max-site-width;
+  margin: 0 auto;
 }

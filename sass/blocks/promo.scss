@@ -1,24 +1,37 @@
 .promo {
-  @include site-width ($min-site-width, $site-padding);
   height: $promo-height;
 
-  &:first-child {
-    padding-top: $header-height;
-    height: $promo-height - $header-height;
+  @include site-width ($min-site-width, $site-padding);
+
+  @media (min-width: $max-site-width) {
+    width: 50%;
+    height: $promo-big-height - $header-big-height;
+    padding-top: $header-big-height;
   }
 
   &--fixies {
+    height: $promo-height - $header-height;
+    padding-top: $header-height;
+
+    background-color: #6a93b5;
     background-image: url("../img/fixies.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #6a93b5;
+
+    @media (min-width: $max-site-width) {
+      background-image: url("../img/fixies-big.jpg");
+    }
   }
 
   &--cruisers {
+    background-color: #b985d8;
     background-image: url("../img/cruisers.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #b985d8;
+
+    @media (min-width: $max-site-width) {
+      background-image: url("../img/cruisers-big.jpg");
+    }
   }
 
   &__title {

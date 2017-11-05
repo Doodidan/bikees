@@ -1,11 +1,22 @@
 .main-header {
-  @include site-width ($min-site-width, $site-padding);
-  display: flex;
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -$min-site-width/2;
+
+  display: flex;
   height: $header-height;
+  margin-left: -$min-site-width/2;
+
+  background-color: yellow;
+  opacity: 0.5;
+
+  @include site-width ($min-site-width, $site-padding);
+
+  @media (min-width: $max-site-width) {
+    @include site-width ($max-site-width, $site-padding);
+
+    margin-left: -$max-site-width/2;
+  }
 
   &__search {
     margin-left: auto;

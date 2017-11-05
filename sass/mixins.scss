@@ -42,8 +42,8 @@
 
 @mixin site-width ($width, $padding) {
   width: $width - $padding*2;
-  margin-left: auto;
   margin-right: auto;
-  padding-left: $padding;
+  margin-left: auto;
   padding-right: $padding;
+  padding-left: $padding;
 }

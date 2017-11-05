@@ -1,5 +1,10 @@
 .main-content {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+
+  // @media (min-width: 1000px) {
+  @media (min-width: $max-site-width) {
+    flex-direction: row;
+  }
 }
