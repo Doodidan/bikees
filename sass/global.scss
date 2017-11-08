@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
 body {
   min-width: $min-site-width;
   max-width: $max-site-width;
   margin: 0 auto;
+
+  font-weight: 300;
+  font-family: "Open Sans", "Arial", sans-serif;
 }

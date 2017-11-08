@@ -1,5 +1,5 @@
 .promo {
-  height: $promo-height;
+  text-align: center;
 
   @include site-width ($min-site-width, $site-padding);
 
@@ -10,13 +10,13 @@
   }
 
   &--fixies {
-    height: $promo-height - $header-height;
-    padding-top: $header-height;
+    height: $promo-height - $header-height - $promo-fixies-padding;
+    padding-top: $header-height + $promo-fixies-padding;
 
     background-color: #6a93b5;
     background-image: url("../img/fixies.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
 
     @media (min-width: $max-site-width) {
       background-image: url("../img/fixies-big.jpg");
@@ -24,6 +24,9 @@
   }
 
   &--cruisers {
+    height: $promo-height - $promo-cruisers-padding;
+    padding-top: $promo-cruisers-padding;
+
     background-color: #b985d8;
     background-image: url("../img/cruisers.jpg");
     background-repeat: no-repeat;
@@ -35,16 +38,32 @@
   }
 
   &__title {
-    text-align: center;
+    @include visually-hidden;
   }
 
   &__description {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    font-size: 54px;
+    color: #ffffff;
   }
 
   &__btn {
     display: block;
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
+    margin-top: 40px;
+    padding: 27px 0;
+
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+
+    background-color: rgba(255,255,255,0.3);
+  }
+
+  &--cruisers &__btn {
+    margin-top: 60px;
   }
 }

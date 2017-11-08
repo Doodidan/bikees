@@ -47,3 +47,21 @@
   padding-right: $padding;
   padding-left: $padding;
 }
+
+@mixin placeholder-color ($param) {
+  &::-webkit-input-placeholder {
+    color: $param;
+  }
+
+  &::-moz-placeholder {
+    color: $param;
+  }
+
+  &:-moz-placeholder {
+    color: $param;
+  }
+
+  &:-ms-input-placeholder {
+    color: $param;
+  }
+}

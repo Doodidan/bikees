@@ -9,16 +9,25 @@
 <body>
   <header class="main-header">
     <h1 class="main-header__title">Bikees.</h1>
-    <button class="main-header__search" type="button">Search</button>
+    <img src="img/menu.png" alt="Menu" class="main-header__menu">
+    <a class="main-header__search" type="button">Search</a>
   </header>
   <main class="main-content">
     <section class="promo promo--fixies">
       <h2 class="promo__title">Fixies</h2>
+      <picture>
+        <source media="(min-width:2880px)" srcset="img/fixies-words-big.png">
+        <img src="img/fixies-words.png" alt="Fixies">
+      </picture>
       <p class="promo__description">Hisper style</p>
       <a href="#" class="btn promo__btn">Choisir son modèle</a>
     </section>
     <section class="promo promo--cruisers">
       <h2 class="promo__title">Cruisers</h2>
+      <picture>
+        <source media="(min-width:2880px)" srcset="img/cruisers-words-big.png">
+        <img src="img/cruisers-words.png" alt="Fixies">
+      </picture>
       <p class="promo__description">Hippie style</p>
       <a href="#" class="btn promo__btn">Choisir son modèle</a>
     </section>
@@ -32,33 +41,33 @@
     </section>
     <ul class="menu main-footer__menu">
       <li class="menu__item">
-        <a href="#">Fixies</a>
+        <a class="menu__link" href="#">Fixies</a>
       </li>
       <li class="menu__item">
-        <a href="#">Cruisers</a>
+        <a class="menu__link" href="#">Cruisers</a>
       </li>
       <li class="menu__item">
-        <a href="#">Accessoires</a>
+        <a class="menu__link" href="#">Accessoires</a>
       </li>
       <li class="menu__item">
-        <a href="#">Mentions</a>
+        <a class="menu__link" href="#">Mentions</a>
       </li>
       <li class="menu__item">
-        <a href="#">C.G.U</a>
+        <a class="menu__link" href="#">C.G.U</a>
       </li>
       <li class="menu__item">
-        <a href="#">Contact</a>
+        <a class="menu__link" href="#">Contact</a>
       </li>
     </ul>
     <section class="contacts">
-      <label class="contacts__prompt">
-        <span>Inscription Newsletter</span>
-        <input type="text" placeholder="Saisissez votre adresse mail">
+      <label class="contacts__label">
+        <span class="contacts__prompt">Inscription Newsletter</span>
+        <input class="contacts__input" type="text" placeholder="Saisissez votre adresse mail">
       </label>
       <ul class="social">
-        <li><a href="#" class="btn social__btn">Twitter</a></li>
-        <li><a href="#" class="btn social__btn">Google+</a></li>
-        <li><a href="#" class="btn social__btn">Facebook</a></li>
+        <li class="social__item"><a href="#" class="btn btn--twitter social__btn">Twitter</a></li>
+        <li class="social__item"><a href="#" class="btn btn--google social__btn">Google+</a></li>
+        <li class="social__item"><a href="#" class="btn btn--facebook social__btn">Facebook</a></li>
       </ul>
     </section>
   </footer>

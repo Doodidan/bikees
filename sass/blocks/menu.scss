@@ -1,10 +1,15 @@
 .menu {
   display: flex;
   flex-direction: column;
-  width: $min-site-width - $site-padding*2 - $menu-padding*2;
+  width: 77%;
+  margin: 0 auto;
+  margin-top: 73px;
   padding: $menu-padding;
+  padding-top: 55px;
+  padding-bottom: 68px;
 
   list-style: none;
+  font-size: 36px;
 
   border-top: 1px #000000 solid;
   border-bottom: 1px #000000 solid;
@@ -13,5 +18,15 @@
     border: 0;
     border-right: 1px #000000 solid;
     border-left: 1px #000000 solid;
+  }
+
+  &__item {
+    margin: 20px 0;
+  }
+
+  &__link {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }

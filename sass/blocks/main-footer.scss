@@ -1,7 +1,9 @@
 .main-footer {
-  padding: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 
   text-align: center;
+  color: #ffffff;
 
   background-color: $color-footer;
 
@@ -11,6 +13,38 @@
     display: flex;
 
     @include site-width ($max-site-width, $site-padding);
+  }
+
+  &__title {
+    margin-top: 47px;
+    margin-bottom: 0;
+
+    font-size: 54px;
+  }
+
+  &__description {
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  &__promo {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 0;
+
+    font-size: 32px;
+    color: #ffffff;
+  }
+
+  &__copyright {
+    margin-top: 95px;
+    margin-bottom: 0;
+
+    font-weight: bold;
+    font-size: 32px;
   }
 
   &__menu {

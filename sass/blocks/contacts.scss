@@ -1,6 +1,28 @@
 .contacts {
-  &__prompt {
+  &__label {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  &__prompt {
+    font-size: 50px;
+  }
+
+  &__input {
+    display: block;
+    width: 70%;
+    margin: 30px auto 0;
+    padding: 30px;
+
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: rgba(255,255,255,0.2);
+    border: 0;
+
+    @include placeholder-color(#ffffff);
   }
 }
