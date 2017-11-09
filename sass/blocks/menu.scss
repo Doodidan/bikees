@@ -18,6 +18,11 @@
     border: 0;
     border-right: 1px #000000 solid;
     border-left: 1px #000000 solid;
+    width: 620px;
+    padding-left: 130px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+    height: 300px;
   }
 
   &__item {

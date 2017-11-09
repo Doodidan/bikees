@@ -4,10 +4,15 @@
     flex-direction: column;
     margin-top: 60px;
     margin-bottom: 0;
+    text-align: center;
   }
 
   &__prompt {
     font-size: 50px;
+
+    @media (min-width: $max-site-width) {
+      font-size: 35px;
+    }
   }
 
   &__input {

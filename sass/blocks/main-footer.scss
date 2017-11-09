@@ -12,7 +12,9 @@
   @media (min-width: $max-site-width) {
     display: flex;
 
-    @include site-width ($max-site-width, $site-padding);
+    text-align: left;
+
+    @include site-width ($max-site-width, $max-site-padding);
   }
 
   &__title {
@@ -50,6 +52,7 @@
   &__menu {
     @media (min-width: $max-site-width) {
       margin-left: auto;
+      margin-right: 185px;
     }
   }
 }

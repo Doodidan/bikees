@@ -16,11 +16,12 @@
 
 
   @media (min-width: $max-site-width) {
-    width: $min-site-width - $site-padding*2;
+    width: $max-site-width - $max-site-padding*2;
+    height: $max-header-height;
     margin-right: auto;
     margin-left: -$max-site-width/2;
-    padding-right: $site-padding;
-    padding-left: $site-padding;
+    padding-right: $max-site-padding;
+    padding-left: $max-site-padding;
   }
 
   &__title {
@@ -28,18 +29,30 @@
 
     font-size: 50px;
     color: #ffffff;
+
+    @media (min-width: $max-site-width) {
+      font-size: 84px;
+    }
   }
 
   &__menu {
     order: -1;
     width: 34px;
     height: 31px;
+
+    @media (min-width: $max-site-width) {
+      display: none;
+    }
   }
 
   &__search {
     margin-left: auto;
 
     font-size: 0;
+
+    @media (min-width: $max-site-width) {
+      margin-right: 30px;
+    }
 
     &::after {
       content: "";
@@ -49,6 +62,12 @@
       height: 35px;
 
       background-image: url("../img/search.png");
+
+      @media (min-width: $max-site-width) {
+        width: 61px;
+        height: 63px;
+        background-image: url("../img/search-big.png");
+      }
     }
   }
 }

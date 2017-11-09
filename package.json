@@ -1,8 +1,8 @@
 {
-  "name": "pink",
+  "name": "bikees",
   "version": "0.0.1",
   "private": true,
-  "description": "Реализация «Пинк» от HTML Academy",
+  "description": "Реализация «Bikees» из рассылки HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^7.1.1",
